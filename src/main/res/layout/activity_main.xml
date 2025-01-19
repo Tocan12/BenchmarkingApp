@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benchmark App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <!-- Total Benchmark Result Display -->
+    <TextView
+        android:id="@+id/total_benchmark_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memory_benchmark_result"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Total Benchmark Result: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <!-- CPU Benchmark Button -->
+    <Button
+        android:id="@+id/cpu_benchmark_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="CPU Benchmark" />
+
+    <!-- GPU Benchmark Button -->
+    <Button
+        android:id="@+id/gpu_benchmark_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpu_benchmark_btn"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="GPU Benchmark" />
+
+    <!-- Memory Benchmark Button -->
+    <Button
+        android:id="@+id/memory_benchmark_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gpu_benchmark_btn"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Memory Benchmark" />
+
+    <!-- Battery Benchmark Button -->
+    <Button
+        android:id="@+id/battery_benchmark_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memory_benchmark_btn"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Battery Benchmark" />
+
+    <!-- View Results Button -->
+    <Button
+        android:id="@+id/view_results_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/battery_benchmark_btn"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="View Results" />
+
+    <!-- View History Button -->
+    <Button
+        android:id="@+id/view_history_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_results_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="View History"
+        app:rippleColor="#260C0C" />
+
+    <!-- Export Results Button (Newly Added) -->
+    <Button
+        android:id="@+id/export_results_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_history_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Export Results" />
+
+    <!-- Benchmark Result Display -->
+    <TextView
+        android:id="@+id/cpu_benchmark_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/export_results_btn"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="CPU Benchmark Result: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <!-- Memory Benchmark Result Display -->
+    <TextView
+        android:id="@+id/memory_benchmark_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cpu_benchmark_result"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Memory Benchmark Result: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/gpu_benchmark_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_benchmark_result"
+        android:text="GPU Benchmark Result:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+</RelativeLayout>
